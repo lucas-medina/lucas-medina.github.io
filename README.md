@@ -1,2 +1,2 @@
-# lucasmedina.github.io
+# Lucas Medina
 Teste de repositório com Github Pages
