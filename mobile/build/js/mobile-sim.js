@@ -206,7 +206,7 @@ var mobile_sim = {
 			$('.slider-set').val(0).slider("refresh");
 			$('.value-counter .value').text(0);
 			$('.ninja-this-time').removeClass('ninja-this-time');
-			$('.left-aligned').removeClass('left-aligned');
+			$('.left-aligned').attr('style', '').removeClass('left-aligned');
 		});
 
 	},
