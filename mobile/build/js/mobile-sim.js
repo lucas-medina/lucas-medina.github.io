@@ -206,6 +206,7 @@ var mobile_sim = {
 			$('.slider-set').val(0).slider("refresh");
 			$('.value-counter .value').text(0);
 			$('.ninja-this-time').removeClass('ninja-this-time');
+			$('.left-aligned').removeClass('left-aligned');
 		});
 
 	},
@@ -226,25 +227,20 @@ var mobile_sim = {
 		var timer = 0;
 		var interval = setInterval(function(){
 			console.info('margin: ' + $('.progressbar-meter').offset().left + $('.progressbar-meter').outerWidth());
-			if ($('.progressbar-meter').offset().left + $('.progressbar-meter').outerWidth() > window.innerWidth - 5){
-				console.log('oh hell');
-				$('.progressbar-meter').addClass('left-aligned');
-			}
+			if ($('.progressbar-meter').hasClass('left-aligned') == false){
+				if ($('.progressbar-meter').offset().left + $('.progressbar-meter').outerWidth() > window.innerWidth - 5){
+					console.log('oh hell');
+					$('.progressbar-meter').addClass('left-aligned');
+					clearTimeout(interval);
+				}
+			}		
 			timer += 125;
 			if (timer >= 2500){
 				clearTimeout(interval);
 			}
 		}, 125);
 	},
-	// o meterStaticChange muda a classe a partir de resize() do jQuery.
-	meterStaticChange : function(){
-		if ($('.progressbar-meter').offset().left + $('.progressbar-meter').outerWidth() > window.innerWidth - 5){
-			console.log('oh hell');
-			$('.progressbar-meter').addClass('left-aligned');
-		} else {
-			$('.progressbar-meter').removeClass('left-aligned');
-		}
-	},
+	
 	// Retorna: Nome do plano, descrição, como ativar, preço
 	resultPlanos : function(args){
 		$('[data-label="plano-nome"]').text(args.nome);
