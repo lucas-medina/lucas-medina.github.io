@@ -1,0 +1,35 @@
+
+#tim-new-rodape {
+	margin: 20px 0 40px;
+	border-top: 1px solid #dfdfdf;
+}
+	.tim-new-rodape-links {
+		display: block;
+		padding: 20px 0px 0px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 12px;
+		color: #9b9b9b;
+	}
+		.tim-new-rodape-links li {
+			display: inline-block;
+			width: 450px;
+			margin: 0 0 15px 0;
+		}
+		.tim-new-rodape-links li:nth-child(2n + 1) {
+			margin-right: 25px;
+		}
+			.rodape-link-title {
+				font-weight: bold;
+				font-size: 13px;
+				text-transform: uppercase;
+			}
+			.tim-new-rodape-links a {
+				color: #41c4dd;
+				font-size: 13px;
+				font-weight: bold;
+				font-family: 'Open Sans', sans-serif;
+				text-decoration: none;
+			}
+			.tim-new-rodape-links a:hover {
+				text-decoration: underline;
+			}
