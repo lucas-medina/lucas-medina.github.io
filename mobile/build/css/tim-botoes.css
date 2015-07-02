@@ -1,0 +1,119 @@
+/* Base dos botoões */
+.tim-btn {
+	display: inline-block;
+	border-radius: 2px;
+	padding: 10px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFF;
+	cursor: pointer;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	transition: .1s;
+}
+.tim-btn:hover {
+	text-decoration: none;
+}
+/* FIM Base dos botões */
+
+/* Padrões de botões */
+	.tim-btn.btn-normal {
+		background-color: #136ee0;
+	}
+	.tim-btn.btn-anular {
+		background-color: #fa8525;
+	}
+	.tim-btn.btn-atencao {
+		background-color: #FFFC00;
+		color: #0D4B85;
+	}
+	.tim-btn.btn-action {
+		background-color: #fecd05;
+  		color: #173b6c;
+	}
+	.tim-btn.btn-comprar {
+		background-color: #5ba012;
+	}
+	.tim-btn.btn-beta {
+		background-color: #1E1E1E;
+	}
+	.btn-grande.btn-comprar span {
+		font-weight: normal;
+	}
+/* FIM Padrões de botões */
+/* Mouseover */
+	.tim-btn.btn-normal:hover {
+		background-color: #104497;
+	}
+	.tim-btn.btn-anular:hover {
+		background-color: #fb5024;
+	}
+	.tim-btn.btn-comprar:hover {
+		background-color: #197101;
+	}
+	.tim-btn.btn-atencao:hover {
+		background-color: #FFD800;
+	}
+	.tim-btn.btn-beta:hover {
+		background-color: #4F5F71;
+	}
+	.tim-btn.btn-action:hover {
+		background-color: #EDB606;
+	}
+
+/* Icones */
+	.tim-btn.icone {
+		background-image: url('../images/tim-botoes-icones.png');
+		background-repeat: no-repeat;
+	}
+	.tim-btn.icone.icone-comprar {
+		background-position: 7px 5px;
+		padding: 10px 10px 10px 38px;
+	}
+	.tim-btn.icone.icone-acessar {
+		background-position: 5px -167px;
+		padding: 10px 10px 10px 36px;
+	}
+	.tim-btn.icone.icone-confirmar {
+		background-position: 5px -36px;
+		padding: 10px 10px 10px 39px;
+	}
+	.tim-btn.icone.icone-contato {
+		background-position: 5px -124px;
+		padding: 10px 10px 10px 36px;
+	}
+	.tim-btn.icone.icone-exterior {
+		background-position: 5px -78px;
+		padding: 10px 10px 10px 36px;
+	}
+	/* Icones Maiores */
+	.tim-btn.btn-grande.icone.icone-comprar {
+		background-position: 15px 12px;
+		padding: 15px 20px 15px 50px;
+	}
+	.tim-btn.btn-grande.icone.icone-acessar {
+		background-position: 15px -162px;
+		padding: 15px 20px 15px 50px;
+	}
+	.tim-btn.btn-grande.icone.icone-confirmar {
+		background-position: 15px -31px;
+		padding: 15px 20px 15px 50px;
+	}
+	.tim-btn.btn-grande.icone.icone-contato {
+		background-position: 15px -119px;
+		padding: 15px 20px 15px 50px;
+	}
+	.tim-btn.btn-grande.icone.icone-exterior {
+		background-position: 15px -72px;
+		padding: 15px 20px 15px 50px;
+	}
+/* FIM Icones */
+
+/* Tamanho */
+.tim-btn.btn-grande {
+	padding: 15px 20px;
+}
